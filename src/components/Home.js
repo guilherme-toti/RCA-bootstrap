@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Footer from './Footer'
+import AddTodo from '../containers/AddTodo'
+import VisibleTodoList from '../containers/VisibleTodoList'
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        Home Page
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
       </div>
     );
   }
